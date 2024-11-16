@@ -18,6 +18,17 @@ repositories {
 
 dependencies {
     // This dependency is used by the application.
+    // https://mvnrepository.com/artifact/com.amazonaws/aws-lambda-java-core
+    implementation("com.amazonaws:aws-lambda-java-core:1.2.2")
+    // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3
+    implementation("com.amazonaws:aws-java-sdk-s3:1.12.681")
+    // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3
+    implementation("com.amazonaws:aws-java-sdk-s3:1.12.681")
+    // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk
+    implementation("com.amazonaws:aws-java-sdk:1.12.681")
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    testImplementation("org.slf4j:slf4j-simple:2.0.7")
+
     implementation(libs.guava)
 }
 
@@ -40,5 +51,5 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "org.example.App"
+    mainClass = "br.com.neque_si.App"
 }
